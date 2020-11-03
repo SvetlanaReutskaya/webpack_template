@@ -1,0 +1,32 @@
+{
+  "name": "filefolder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "npx webpack --mode production",
+    "dev": "npx sass src/styles/style.scss dist/style.css && npx webpack --mode development",
+    "start": "npm run dev && npx sass src/styles/style.scss dist/style.css && npx webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.28.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "babel-loader": "8.1.0",
+    "copy-webpack-plugin": "5.1.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "jest": "26.0.1",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
+  }
+}
